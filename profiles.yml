@@ -1,0 +1,53 @@
+intern_training:
+  outputs:
+    dev:
+      account: yg33557.ap-south-1.aws
+      client_session_keep_alive: false
+      database: ANALYTICS
+      password: RVishal@1207
+      role: ACCOUNTADMIN
+      schema: public
+      threads: 4
+      type: snowflake
+      user: vishal
+      warehouse: COMPUTE_WH
+  target: dev
+retail_dbt:
+  outputs:
+    dev:
+      account: yg33557.ap-south-1.aws
+      database: RETAIL
+      password: RVishal@1207
+      role: ACCOUNTADMIN
+      schema: dbo
+      threads: 4
+      type: snowflake
+      user: vishal
+      warehouse: COMPUTE_WH
+  target: dev
+snowflake_training:
+  outputs:
+    dev:
+      account: yg33557.ap-south-1.aws
+      database: analytics
+      password: RVishal@1207
+      role: ACCOUNTADMIN
+      schema: dbo
+      threads: 5
+      type: snowflake
+      user: vishal
+      warehouse: COMPUTE_WH
+  target: dev
+dbt_assessment:
+  outputs:
+    dev:
+      account: ks83470.ap-south-1.aws
+      database: analytics
+      password: Canr@2414
+      role: ACCOUNTADMIN
+      schema: dbo
+      threads: 5
+      type: snowflake
+      user: akhilch
+      warehouse: COMPUTE_WH
+  target: dev
